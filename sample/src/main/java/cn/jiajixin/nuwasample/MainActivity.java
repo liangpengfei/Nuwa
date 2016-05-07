@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
-import cn.jiajixin.nuwasample.Hello.Hello;
+import cn.jiajixin.nuwasample.MyTest.MyTest;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         TextView textView = (TextView) findViewById(R.id.textview);
-        textView.setText(new Hello().say());
+        textView.setText(MyTest.say());
+
     }
 
 }

@@ -15,6 +15,7 @@ public class NuwaApplication extends Application {
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
         Nuwa.init(this);
+        //构建起联系来,patch文件在卸载的时候要删掉,不然会有class文件不一致的问题
         Nuwa.loadPatch(this, Environment.getExternalStorageDirectory().getAbsolutePath().concat("/patch.jar"));
     }
 }
